@@ -1,0 +1,11 @@
+In this ecommerce project we first created configs, controllers, models, routes folders for their respective function.
+Now problem statement is create REST API's for the category. And REST is nothing but the resource\noun\actor\entity. So category is my resource here, it corresponds to category table should exist in the database. Because whatever data we give for category it must be stored somewhere in the database.
+ First thing we should do is define the schema and then create table in the database. And in order to do that we need such tool which is nothing but a sequelize.
+ Now before moving to the sequelize first thing we need to know that what will be the attributes for the category table.So category should have name, description, id, createdBY, updatedBy. These are the fields that category should have.
+ Now using sequelize create the model.
+ Get started with creation of category schema. So in order to create category schema we need Mysql connection with the help of sequelize and then we will  build the schema object for category.
+ We will create db.config.js file inside the configs folder and set the database configuration of ecommerce.
+ After set the config folder we will move to the model folder. Inside model folder we will create the category.model.js file and define the schema of category table and export it.
+ Another file name index.js going to create where file will expose the functionalities of all the model files defined under the models directory.
+ 
+In index.js file we require sequelize npm package and database configuration to cerate the connection with database.And then we create empty object name db and set properties of sequelize connection object, sequelize npm package and category schema.Finally we export the db object. 
